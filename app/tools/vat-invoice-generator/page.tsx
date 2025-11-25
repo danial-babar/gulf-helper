@@ -424,16 +424,166 @@ export default function VATInvoiceGeneratorPage() {
       </div>
 
       {/* SEO Text */}
-      <SEOTextBlock title="Understanding VAT Invoices">
-        <p>
-          VAT invoices are required documents for businesses in Saudi Arabia and GCC countries. They must include specific information such as seller and buyer details, VAT numbers, item descriptions, and VAT amounts.
-        </p>
-        <p>
-          A compliant VAT invoice should include the invoice number, date, seller and buyer information, itemized list of goods or services, subtotal, VAT rate, VAT amount, and total amount.
-        </p>
-        <p>
-          Our VAT invoice generator helps you create compliant invoices quickly and easily, ensuring you meet all regulatory requirements for your business transactions.
-        </p>
+      <SEOTextBlock title="Complete Guide to VAT Invoice Generation in Saudi Arabia">
+        <div className="space-y-6">
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Understanding VAT Invoices in Saudi Arabia</h2>
+            <p>
+              VAT invoices are mandatory documents for all VAT-registered businesses in Saudi Arabia and GCC countries. These invoices serve as official records of taxable transactions and are required for VAT compliance, accounting, and tax filing purposes.
+            </p>
+            <p>
+              Creating compliant VAT invoices is essential for businesses operating in Saudi Arabia. Our VAT invoice generator helps you create professional, legally compliant invoices quickly and easily, ensuring you meet all regulatory requirements.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">What is a VAT Invoice?</h2>
+            <p>
+              A VAT invoice is a document issued by a VAT-registered business to a customer for the supply of goods or services. It must include specific mandatory information as required by the Saudi Zakat, Tax and Customs Authority (ZATCA).
+            </p>
+            <p>
+              VAT invoices are different from regular invoices because they must clearly show the VAT amount charged, the VAT rate applied, and the VAT registration numbers of both the seller and buyer (if applicable).
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Mandatory Information on VAT Invoices</h2>
+            <p>
+              According to Saudi VAT regulations, a compliant VAT invoice must include:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 my-4">
+              <li><strong>Invoice Number:</strong> A unique sequential number for each invoice</li>
+              <li><strong>Invoice Date:</strong> The date the invoice is issued</li>
+              <li><strong>Seller Information:</strong> Business name, address, and VAT registration number</li>
+              <li><strong>Buyer Information:</strong> Customer name, address, and VAT number (if registered)</li>
+              <li><strong>Itemized List:</strong> Description, quantity, unit price for each item or service</li>
+              <li><strong>VAT Rate:</strong> The applicable VAT rate (15%, 5%, or 0%)</li>
+              <li><strong>VAT Amount:</strong> The total VAT charged</li>
+              <li><strong>Subtotal:</strong> Total amount before VAT</li>
+              <li><strong>Total Amount:</strong> Final amount including VAT</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Types of VAT Invoices</h2>
+            <p>
+              In Saudi Arabia, there are different types of VAT invoices:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 my-4">
+              <li><strong>Standard VAT Invoice:</strong> For regular business-to-business and business-to-consumer transactions</li>
+              <li><strong>Simplified Invoice:</strong> For retail sales under 1,000 SAR (fewer details required)</li>
+              <li><strong>Credit Note:</strong> For returns, discounts, or corrections</li>
+              <li><strong>Debit Note:</strong> For additional charges or corrections</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">How to Use Our VAT Invoice Generator</h2>
+            <p>
+              Our VAT invoice generator makes it easy to create compliant invoices:
+            </p>
+            <ol className="list-decimal pl-6 space-y-2 my-4">
+              <li>Enter your invoice number and date</li>
+              <li>Fill in your business information (seller details and VAT number)</li>
+              <li>Add customer information (buyer details and VAT number if applicable)</li>
+              <li>Add items with descriptions, quantities, unit prices, and VAT rates</li>
+              <li>Review the invoice preview</li>
+              <li>Download as PDF or print directly</li>
+            </ol>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">VAT Rates in Saudi Arabia</h2>
+            <p>
+              The standard VAT rate in Saudi Arabia is 15%. However, some items may be:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 my-4">
+              <li><strong>Zero-Rated (0%):</strong> Exports, certain medical supplies, international transportation</li>
+              <li><strong>Exempt:</strong> Financial services (in some cases), residential property sales</li>
+              <li><strong>Standard Rate (15%):</strong> Most goods and services</li>
+            </ul>
+            <p>
+              Our invoice generator supports all VAT rates, allowing you to create invoices for different types of transactions.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Best Practices for VAT Invoices</h2>
+            <ul className="list-disc pl-6 space-y-2 my-4">
+              <li><strong>Use Sequential Numbers:</strong> Invoice numbers should be sequential and unique</li>
+              <li><strong>Issue Promptly:</strong> Issue invoices within 15 days of supply (or as per contract)</li>
+              <li><strong>Keep Records:</strong> Maintain copies of all invoices for at least 6 years</li>
+              <li><strong>Be Accurate:</strong> Ensure all calculations are correct to avoid compliance issues</li>
+              <li><strong>Include All Required Fields:</strong> Missing information can result in non-compliance</li>
+              <li><strong>Use Arabic When Required:</strong> Some businesses may need bilingual invoices</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Digital Invoicing and E-Invoicing</h2>
+            <p>
+              Saudi Arabia is moving toward mandatory e-invoicing. The ZATCA has implemented phases for e-invoicing:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 my-4">
+              <li><strong>Phase 1:</strong> Generation of e-invoices (already implemented)</li>
+              <li><strong>Phase 2:</strong> Integration with ZATCA's system (being rolled out)</li>
+            </ul>
+            <p>
+              While our generator creates standard invoices, businesses should also ensure compliance with e-invoicing requirements as they become mandatory.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions (FAQ)</h2>
+            
+            <div className="space-y-4 mt-4">
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Do I need to issue a VAT invoice for every sale?</h3>
+                <p>
+                  Yes, VAT-registered businesses must issue VAT invoices for all taxable supplies. For retail sales under 1,000 SAR, simplified invoices are acceptable.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-2">What if my customer doesn't have a VAT number?</h3>
+                <p>
+                  You can still issue a VAT invoice. Simply leave the buyer VAT number field blank or mark it as "Not VAT Registered" for B2C transactions.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Can I modify an invoice after issuing it?</h3>
+                <p>
+                  No, you cannot modify an issued invoice. If corrections are needed, issue a credit note or debit note to adjust the original invoice.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-2">How long should I keep invoice records?</h3>
+                <p>
+                  VAT-registered businesses must keep invoice records for at least 6 years from the end of the tax period to which they relate.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Can I use this generator for other GCC countries?</h3>
+                <p>
+                  While the structure is similar, VAT rates and requirements vary by country. For UAE, Bahrain, and Oman (5% VAT), adjust the VAT rate accordingly. Always verify local requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Conclusion</h2>
+            <p>
+              Creating compliant VAT invoices is essential for businesses in Saudi Arabia. Our free VAT invoice generator helps you create professional, legally compliant invoices quickly and easily, ensuring you meet all regulatory requirements.
+            </p>
+            <p>
+              Use our generator to streamline your invoicing process, maintain compliance, and keep accurate records for your business. Whether you're a small business or a large enterprise, proper invoicing is crucial for VAT compliance and smooth business operations.
+            </p>
+          </div>
+        </div>
       </SEOTextBlock>
     </div>
   )
