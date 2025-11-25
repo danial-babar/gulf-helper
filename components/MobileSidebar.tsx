@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import {
   Calculator,
@@ -77,10 +78,13 @@ export function MobileSidebar() {
     <div className="flex flex-col h-full">
       <div className="p-4 border-b border-border">
         <div className="flex items-center gap-2 mb-4">
-          <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-            <span className="text-white font-bold text-lg">G</span>
-          </div>
-          <span className="text-xl font-bold text-foreground">GulfHelper</span>
+          <Image
+            src="/logo.svg"
+            alt="GulfHelper"
+            width={140}
+            height={33}
+            className="h-8 w-auto"
+          />
         </div>
         <div className="relative">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />

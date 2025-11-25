@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Calculator, FileText, BookOpen, Mail } from "lucide-react"
 
 export function Footer() {
@@ -7,11 +8,14 @@ export function Footer() {
       <div className="container px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                <span className="text-white font-bold text-lg">G</span>
-              </div>
-              <span className="text-xl font-bold text-foreground">GulfHelper</span>
+            <div className="mb-4">
+              <Image
+                src="/logo.svg"
+                alt="GulfHelper"
+                width={140}
+                height={33}
+                className="h-8 w-auto"
+              />
             </div>
             <p className="text-sm text-muted-foreground">
               Smart tools for Saudi Arabia & GCC. Calculate, generate, and manage with confidence.

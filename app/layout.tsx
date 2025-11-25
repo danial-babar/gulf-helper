@@ -13,6 +13,15 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "GulfHelper – Smart Tools for Saudi & GCC",
   description: "Calculate Zakat, VAT, Salary, Loans, and more. Smart tools for Saudi Arabia & GCC.",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/logo-icon.svg", sizes: "48x48", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/logo-icon.svg", sizes: "180x180", type: "image/svg+xml" },
+    ],
+  },
 };
 
 export default function RootLayout({
