@@ -297,16 +297,209 @@ export default function SalaryCalculatorPage() {
       </div>
 
       {/* SEO Text */}
-      <SEOTextBlock title="Understanding Salary Calculation in Saudi Arabia">
-        <p>
-          Salary calculation in Saudi Arabia typically includes a base salary plus various allowances such as housing, transport, and other benefits. Understanding your net salary helps you plan your finances better.
-        </p>
-        <p>
-          Common deductions may include social insurance contributions (GOSI), income tax (if applicable), and other mandatory deductions based on your employment contract.
-        </p>
-        <p>
-          Our salary calculator helps you understand your take-home pay by accounting for all allowances and deductions, giving you a clear picture of your monthly income.
-        </p>
+      <SEOTextBlock title="Complete Guide to Salary Calculation in Saudi Arabia">
+        <div className="space-y-6">
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Understanding Salary Structure in Saudi Arabia</h2>
+            <p>
+              Salary calculation in Saudi Arabia follows a unique structure that typically includes a base salary plus various allowances. Understanding how your salary is calculated helps you plan your finances, negotiate better employment terms, and ensure you're receiving the correct compensation.
+            </p>
+            <p>
+              The Saudi labor market offers competitive compensation packages, especially for expatriates, with various allowances that can significantly impact your take-home pay. Our salary calculator helps you understand exactly how much you'll receive after all deductions.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Components of Salary in Saudi Arabia</h2>
+            <p>
+              A typical salary package in Saudi Arabia consists of:
+            </p>
+            
+            <div className="my-4">
+              <h3 className="text-xl font-semibold mb-2">1. Base Salary (الراتب الأساسي)</h3>
+              <p>
+                The base salary is the core component of your compensation package. This is the fixed amount you receive before any allowances or deductions. It forms the foundation for calculating other benefits and deductions.
+              </p>
+            </div>
+
+            <div className="my-4">
+              <h3 className="text-xl font-semibold mb-2">2. Housing Allowance (بدل السكن)</h3>
+              <p>
+                Housing allowance is one of the most significant components of a Saudi salary package. It can be provided as:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 my-2">
+                <li><strong>Percentage of base salary:</strong> Typically 25-50% of the base salary</li>
+                <li><strong>Fixed amount:</strong> A predetermined monthly amount regardless of base salary</li>
+                <li><strong>Company-provided accommodation:</strong> Some employers provide housing directly</li>
+              </ul>
+              <p>
+                For expatriates, housing allowance is often a major part of the compensation package, helping cover the cost of accommodation in cities like Riyadh, Jeddah, or Dammam.
+              </p>
+            </div>
+
+            <div className="my-4">
+              <h3 className="text-xl font-semibold mb-2">3. Transport Allowance (بدل المواصلات)</h3>
+              <p>
+                Transport allowance covers commuting expenses. While typically smaller than housing allowance, it's a standard component in most employment contracts. The amount varies but is usually between 500-1,500 SAR per month.
+              </p>
+            </div>
+
+            <div className="my-4">
+              <h3 className="text-xl font-semibold mb-2">4. Other Allowances</h3>
+              <p>
+                Additional allowances may include:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 my-2">
+                <li>Food allowance (بدل الطعام)</li>
+                <li>Medical allowance (بدل طبي)</li>
+                <li>Education allowance for children</li>
+                <li>Utility allowances</li>
+                <li>Performance bonuses</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Salary Deductions in Saudi Arabia</h2>
+            <p>
+              Understanding deductions is crucial for calculating your net salary:
+            </p>
+
+            <div className="my-4">
+              <h3 className="text-xl font-semibold mb-2">GOSI (General Organization for Social Insurance)</h3>
+              <p>
+                GOSI is the mandatory social insurance system in Saudi Arabia:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 my-2">
+                <li><strong>Employee Contribution:</strong> 10% of base salary (deducted from your salary)</li>
+                <li><strong>Employer Contribution:</strong> 12% of base salary (paid by employer, not deducted from your salary)</li>
+                <li><strong>Coverage:</strong> Provides retirement, disability, and death benefits</li>
+              </ul>
+              <p>
+                <strong>Important:</strong> GOSI is typically deducted only from the base salary, not from allowances. However, this can vary by employment contract.
+              </p>
+            </div>
+
+            <div className="my-4">
+              <h3 className="text-xl font-semibold mb-2">Other Deductions</h3>
+              <p>
+                Additional deductions may include:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 my-2">
+                <li>Loan repayments (personal loans, car loans)</li>
+                <li>Insurance premiums (health, life insurance)</li>
+                <li>Savings schemes or investment plans</li>
+                <li>Income tax (for certain categories of expatriates, though generally not applicable)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">How to Use Our Salary Calculator</h2>
+            <p>
+              Our salary calculator for Saudi Arabia makes it easy to determine your net salary:
+            </p>
+            <ol className="list-decimal pl-6 space-y-2 my-4">
+              <li>Enter your gross salary (base salary)</li>
+              <li>Input your housing allowance (as percentage or fixed amount)</li>
+              <li>Add transport allowance and any other allowances</li>
+              <li>Enter any additional deductions (loans, insurance, etc.)</li>
+              <li>Select whether GOSI applies to your contract</li>
+              <li>Choose your nationality (Saudi or Expatriate) for accurate calculations</li>
+              <li>The calculator will show your net salary and yearly summary</li>
+            </ol>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Example Salary Calculation</h2>
+            <p>
+              Let's calculate the net salary for an employee with the following package:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 my-4">
+              <li>Base Salary: 10,000 SAR</li>
+              <li>Housing Allowance: 25% of base = 2,500 SAR</li>
+              <li>Transport Allowance: 500 SAR</li>
+              <li>Other Allowances: 0 SAR</li>
+              <li>GOSI: Yes (10% of base salary)</li>
+              <li>Other Deductions: 0 SAR</li>
+            </ul>
+            <p>
+              <strong>Calculation:</strong><br />
+              Gross Salary: 10,000 SAR<br />
+              Total Allowances: 2,500 + 500 = 3,000 SAR<br />
+              GOSI Deduction: 10,000 × 10% = 1,000 SAR<br />
+              <strong>Net Salary: 10,000 + 3,000 - 1,000 = 12,000 SAR</strong>
+            </p>
+            <p>
+              <strong>Yearly Summary:</strong><br />
+              Yearly Gross: 120,000 SAR<br />
+              Yearly Net: 144,000 SAR
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Saudi vs Expatriate Salary Considerations</h2>
+            <p>
+              There are some differences in salary structures between Saudi nationals and expatriates:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 my-4">
+              <li><strong>Saudi Nationals:</strong> Typically have higher GOSI contributions and may have additional benefits like family allowances</li>
+              <li><strong>Expatriates:</strong> Often receive higher housing allowances and may have different tax obligations depending on their home country's tax treaties</li>
+              <li><strong>Both:</strong> Should understand their complete compensation package to make informed financial decisions</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions (FAQ)</h2>
+            
+            <div className="space-y-4 mt-4">
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Is GOSI deducted from allowances?</h3>
+                <p>
+                  Typically, GOSI is calculated only on the base salary, not on allowances. However, this can vary by employment contract. Always check your specific contract terms.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Do expatriates pay income tax in Saudi Arabia?</h3>
+                <p>
+                  Generally, there is no personal income tax in Saudi Arabia for either Saudis or expatriates. However, expatriates may have tax obligations in their home countries. Consult a tax advisor for your specific situation.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-2">What is a typical housing allowance percentage?</h3>
+                <p>
+                  Housing allowance typically ranges from 25% to 50% of base salary for expatriates, though it can be higher or provided as a fixed amount. For Saudi nationals, it's often lower or may be provided as company housing.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Can I negotiate my salary package?</h3>
+                <p>
+                  Yes, salary packages in Saudi Arabia are often negotiable, especially for expatriates. Consider negotiating base salary, housing allowance, and other benefits as a complete package.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-2">How often are salaries paid in Saudi Arabia?</h3>
+                <p>
+                  Most employers in Saudi Arabia pay salaries monthly, typically at the end of the month. Some companies may pay bi-monthly or have different payment schedules.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Conclusion</h2>
+            <p>
+              Understanding your salary calculation in Saudi Arabia is essential for financial planning and ensuring you receive the correct compensation. Our free salary calculator helps you break down your complete compensation package, showing exactly how allowances and deductions affect your take-home pay.
+            </p>
+            <p>
+              Use our calculator to understand your net salary, plan your budget, and make informed decisions about your employment. Whether you're a Saudi national or an expatriate, knowing your exact take-home pay helps you manage your finances effectively in the Kingdom.
+            </p>
+          </div>
+        </div>
       </SEOTextBlock>
     </div>
   )

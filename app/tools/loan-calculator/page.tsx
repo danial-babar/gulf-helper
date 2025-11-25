@@ -283,16 +283,207 @@ export default function LoanCalculatorPage() {
       </Tabs>
 
       {/* SEO Text */}
-      <SEOTextBlock title="Understanding Loan Calculations">
-        <p>
-          A loan calculator helps you understand the total cost of borrowing money, including principal and interest payments over the loan term.
-        </p>
-        <p>
-          The monthly payment amount depends on the loan amount, interest rate, and loan term. Understanding these factors helps you make informed decisions about borrowing.
-        </p>
-        <p>
-          Our loan calculator provides a clear breakdown of your payments, total interest, and the overall cost of your loan, helping you plan your finances effectively.
-        </p>
+      <SEOTextBlock title="Complete Guide to Loan Calculations in Saudi Arabia">
+        <div className="space-y-6">
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Understanding Loans in Saudi Arabia</h2>
+            <p>
+              Loans are a common financial tool in Saudi Arabia, used for various purposes including personal expenses, car purchases, home improvements, and business investments. Understanding how loans work, including EMI calculations and eligibility criteria, is essential for making informed borrowing decisions.
+            </p>
+            <p>
+              Our comprehensive loan calculator helps you understand both your loan eligibility and the exact monthly payments (EMI) you'll need to make. Whether you're planning to take a personal loan, car loan, or any other type of financing, our tools provide accurate calculations based on Saudi banking standards.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">What is EMI (Equated Monthly Installment)?</h2>
+            <p>
+              EMI is the fixed monthly payment you make to repay your loan. It consists of two components:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 my-4">
+              <li><strong>Principal Amount:</strong> The portion that goes toward repaying the loan amount</li>
+              <li><strong>Interest Amount:</strong> The cost of borrowing money</li>
+            </ul>
+            <p>
+              The EMI amount remains constant throughout the loan tenure, but the proportion of principal and interest changes over time. In the early months, you pay more interest; in later months, you pay more principal.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">How EMI is Calculated</h2>
+            <p>
+              The EMI calculation formula is:
+            </p>
+            <div className="bg-muted p-4 rounded-lg my-4">
+              <p className="font-mono text-sm">
+                EMI = [P × R × (1+R)^N] / [(1+R)^N - 1]
+              </p>
+              <p className="text-sm mt-2">
+                Where:<br />
+                P = Principal loan amount<br />
+                R = Monthly interest rate (Annual rate ÷ 12)<br />
+                N = Loan tenure in months
+              </p>
+            </div>
+            <p>
+              <strong>Example:</strong> For a loan of 500,000 SAR at 5.5% annual interest for 20 years:
+            </p>
+            <ul className="list-disc pl-6 space-y-1 my-2">
+              <li>Principal (P): 500,000 SAR</li>
+              <li>Monthly Interest Rate (R): 5.5% ÷ 12 = 0.4583%</li>
+              <li>Tenure (N): 20 years × 12 = 240 months</li>
+              <li>EMI: Approximately 3,445 SAR per month</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Loan Eligibility in Saudi Arabia</h2>
+            <p>
+              Banks in Saudi Arabia assess loan eligibility based on several factors:
+            </p>
+            
+            <div className="my-4">
+              <h3 className="text-xl font-semibold mb-2">1. Income Requirements</h3>
+              <p>
+                Your monthly income is a primary factor. Banks typically allow EMI payments up to 30-40% of your available monthly income (income minus existing obligations).
+              </p>
+            </div>
+
+            <div className="my-4">
+              <h3 className="text-xl font-semibold mb-2">2. Existing Obligations</h3>
+              <p>
+                Banks consider your existing financial commitments:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 my-2">
+                <li>Existing loan EMIs</li>
+                <li>Credit card payments</li>
+                <li>Other monthly financial commitments</li>
+              </ul>
+            </div>
+
+            <div className="my-4">
+              <h3 className="text-xl font-semibold mb-2">3. Credit History</h3>
+              <p>
+                Your credit score and payment history significantly impact loan eligibility. A good credit history increases your chances of approval and may result in better interest rates.
+              </p>
+            </div>
+
+            <div className="my-4">
+              <h3 className="text-xl font-semibold mb-2">4. Employment Status</h3>
+              <p>
+                Stable employment is crucial. Banks prefer applicants with:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 my-2">
+                <li>Permanent employment contracts</li>
+                <li>Minimum 6-12 months of employment history</li>
+                <li>Regular salary payments</li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Types of Loans Available in Saudi Arabia</h2>
+            <p>
+              Various loan products are available in Saudi Arabia:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 my-4">
+              <li><strong>Personal Loans:</strong> Unsecured loans for personal use, typically up to 500,000 SAR</li>
+              <li><strong>Car Loans:</strong> Secured loans for vehicle purchases, usually up to 80-90% of car value</li>
+              <li><strong>Home Loans:</strong> Long-term financing for property purchases</li>
+              <li><strong>Business Loans:</strong> For business expansion and working capital</li>
+              <li><strong>Credit Cards:</strong> Revolving credit with minimum payment requirements</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">How to Use Our Loan Calculator</h2>
+            <p>
+              Our loan calculator offers two powerful tools:
+            </p>
+            
+            <div className="my-4">
+              <h3 className="text-xl font-semibold mb-2">EMI Calculator</h3>
+              <ol className="list-decimal pl-6 space-y-2">
+                <li>Enter the loan amount you want to borrow</li>
+                <li>Input the annual interest rate offered by the bank</li>
+                <li>Select the loan tenure (in years or months)</li>
+                <li>Instantly see your monthly EMI, total interest, and total payment</li>
+              </ol>
+            </div>
+
+            <div className="my-4">
+              <h3 className="text-xl font-semibold mb-2">Loan Eligibility Calculator</h3>
+              <ol className="list-decimal pl-6 space-y-2">
+                <li>Enter your monthly income</li>
+                <li>Input your existing monthly obligations (other loans, credit cards, etc.)</li>
+                <li>Set the bank's EMI limit percentage (typically 30-40%)</li>
+                <li>Get an estimate of your maximum eligible loan amount</li>
+              </ol>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Tips for Getting the Best Loan Terms</h2>
+            <ul className="list-disc pl-6 space-y-2 my-4">
+              <li><strong>Maintain a good credit score:</strong> Pay all bills on time and keep credit utilization low</li>
+              <li><strong>Compare offers:</strong> Different banks offer different interest rates and terms</li>
+              <li><strong>Negotiate:</strong> If you have a good credit history, you may be able to negotiate better rates</li>
+              <li><strong>Consider shorter tenures:</strong> While monthly payments are higher, total interest is lower</li>
+              <li><strong>Read the fine print:</strong> Understand all fees, charges, and terms before signing</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions (FAQ)</h2>
+            
+            <div className="space-y-4 mt-4">
+              <div>
+                <h3 className="text-xl font-semibold mb-2">What is a typical interest rate for personal loans in Saudi Arabia?</h3>
+                <p>
+                  Personal loan interest rates in Saudi Arabia typically range from 4% to 8% per annum, depending on your credit profile, loan amount, and the bank. Rates can vary significantly, so it's important to shop around.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Can I prepay my loan early?</h3>
+                <p>
+                  Most banks in Saudi Arabia allow early loan repayment, but may charge a prepayment penalty (usually 1-2% of the outstanding amount). Check your loan agreement for specific terms.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-2">What happens if I miss an EMI payment?</h3>
+                <p>
+                  Missing EMI payments can result in late fees, negative impact on your credit score, and potentially loan default. Contact your bank immediately if you're facing payment difficulties to discuss restructuring options.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-2">How does loan tenure affect my EMI?</h3>
+                <p>
+                  Longer loan tenures result in lower monthly EMIs but higher total interest paid. Shorter tenures mean higher EMIs but less total interest. Choose based on your monthly cash flow capacity.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Can expatriates get loans in Saudi Arabia?</h3>
+                <p>
+                  Yes, many banks offer loans to expatriates, though requirements may be stricter. Typically, you need a valid residency permit (Iqama), stable employment, and a minimum salary threshold (often 5,000-8,000 SAR per month).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Conclusion</h2>
+            <p>
+              Understanding loan calculations and eligibility is crucial for making informed borrowing decisions in Saudi Arabia. Our free loan calculator helps you determine both your loan eligibility and exact EMI payments, ensuring you can comfortably manage your loan obligations.
+            </p>
+            <p>
+              Use our calculator to compare different loan options, understand the total cost of borrowing, and plan your finances effectively. Whether you're considering a personal loan, car loan, or any other financing, our tools provide the clarity you need to make the right decision.
+            </p>
+          </div>
+        </div>
       </SEOTextBlock>
     </div>
   )

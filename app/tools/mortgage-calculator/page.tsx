@@ -202,16 +202,128 @@ export default function MortgageCalculatorPage() {
       </div>
 
       {/* SEO Text */}
-      <SEOTextBlock title="Understanding Mortgage Calculations">
-        <p>
-          A mortgage calculator helps you understand the financial commitment of purchasing a property, including monthly payments, total interest, and the overall cost of the loan.
-        </p>
-        <p>
-          The monthly mortgage payment depends on the loan amount (property price minus down payment), interest rate, and loan term. A larger down payment reduces your monthly payment and total interest.
-        </p>
-        <p>
-          Our mortgage calculator provides a clear breakdown of your payments, helping you make informed decisions about property purchases and plan your finances accordingly.
-        </p>
+      <SEOTextBlock title="Complete Guide to Mortgage Calculation in Saudi Arabia">
+        <div className="space-y-6">
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Understanding Mortgages in Saudi Arabia</h2>
+            <p>
+              Mortgages (home loans) have become increasingly popular in Saudi Arabia, especially with government initiatives like the Sakani program making homeownership more accessible. Understanding mortgage calculations is essential for anyone considering buying property in cities like Riyadh, Jeddah, or Dammam.
+            </p>
+            <p>
+              A mortgage calculator helps you understand the complete financial picture of property ownership, including monthly payments, total interest costs, and how different down payments and loan terms affect your finances.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">How Mortgage Payments Work</h2>
+            <p>
+              Your monthly mortgage payment (EMI) consists of:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 my-4">
+              <li><strong>Principal:</strong> The portion that reduces your loan balance</li>
+              <li><strong>Interest:</strong> The cost of borrowing money</li>
+            </ul>
+            <p>
+              In the early years of your mortgage, most of your payment goes toward interest. As you progress, more goes toward principal. This is called amortization.
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Key Factors Affecting Your Mortgage</h2>
+            
+            <div className="my-4">
+              <h3 className="text-xl font-semibold mb-2">1. Down Payment</h3>
+              <p>
+                The down payment is your initial contribution toward the property purchase. Typical down payments are 20-30% of property value, though some programs like Sakani may offer lower down payments (10-15%) for eligible first-time buyers.
+              </p>
+            </div>
+
+            <div className="my-4">
+              <h3 className="text-xl font-semibold mb-2">2. Interest Rate</h3>
+              <p>
+                Mortgage interest rates in Saudi Arabia typically range from 4% to 7% per annum, depending on your credit score, loan-to-value ratio, and bank policies.
+              </p>
+            </div>
+
+            <div className="my-4">
+              <h3 className="text-xl font-semibold mb-2">3. Loan Term</h3>
+              <p>
+                Common mortgage terms in Saudi Arabia are 15, 20, 25, or 30 years. Longer terms mean lower monthly payments but more total interest paid.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">How to Use Our Mortgage Calculator</h2>
+            <p>
+              Our mortgage calculator helps you plan your property purchase:
+            </p>
+            <ol className="list-decimal pl-6 space-y-2 my-4">
+              <li>Enter the property price you're considering</li>
+              <li>Input your planned down payment amount</li>
+              <li>Set the interest rate (check with banks for current rates)</li>
+              <li>Choose your preferred loan term (15, 20, 25, or 30 years)</li>
+              <li>Instantly see your monthly EMI, total interest, and total payment</li>
+            </ol>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Example Mortgage Calculation</h2>
+            <p>
+              Let's calculate a mortgage for a property in Riyadh:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 my-4">
+              <li>Property Price: 2,000,000 SAR</li>
+              <li>Down Payment: 400,000 SAR (20%)</li>
+              <li>Loan Amount: 1,600,000 SAR</li>
+              <li>Interest Rate: 5.5% per annum</li>
+              <li>Loan Term: 20 years</li>
+            </ul>
+            <p>
+              <strong>Calculation:</strong><br />
+              Monthly EMI: Approximately 11,020 SAR<br />
+              Total Interest: 1,044,800 SAR<br />
+              Total Payment: 2,644,800 SAR
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions (FAQ)</h2>
+            
+            <div className="space-y-4 mt-4">
+              <div>
+                <h3 className="text-xl font-semibold mb-2">What is the minimum down payment for a mortgage in Saudi Arabia?</h3>
+                <p>
+                  Typically 20-30% of property value, though some programs like Sakani may offer lower down payments (10-15%) for eligible first-time buyers.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-2">Can expatriates get mortgages in Saudi Arabia?</h3>
+                <p>
+                  Yes, many banks offer mortgages to expatriates, though requirements may be stricter. You typically need a valid Iqama, stable employment, and minimum salary thresholds (often 8,000-10,000 SAR per month).
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold mb-2">What is the maximum mortgage term in Saudi Arabia?</h3>
+                <p>
+                  Most banks offer mortgage terms up to 25-30 years, though 20 years is most common. The maximum term often depends on your age and retirement plans.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold mb-4">Conclusion</h2>
+            <p>
+              Understanding mortgage calculations is essential for making informed property purchase decisions in Saudi Arabia. Our free mortgage calculator helps you understand the complete financial commitment, including monthly payments, total interest, and how different factors affect your mortgage.
+            </p>
+            <p>
+              Use our calculator to compare different scenarios, understand the impact of down payments and loan terms, and plan your finances effectively.
+            </p>
+          </div>
+        </div>
       </SEOTextBlock>
     </div>
   )
