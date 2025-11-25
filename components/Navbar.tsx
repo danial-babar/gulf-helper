@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { Search, Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -13,12 +14,14 @@ export function Navbar() {
       <div className="container flex h-16 items-center justify-between px-4">
         <div className="flex items-center gap-6">
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex items-center gap-2">
-              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                <span className="text-white font-bold text-lg">G</span>
-              </div>
-              <span className="text-xl font-bold text-foreground">GulfHelper</span>
-            </div>
+            <Image
+              src="/logo.svg"
+              alt="GulfHelper"
+              width={160}
+              height={38}
+              className="h-8 w-auto"
+              priority
+            />
           </Link>
           
           {/* Desktop Search */}

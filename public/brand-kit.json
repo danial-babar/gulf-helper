@@ -1,0 +1,253 @@
+{
+  "brand": {
+    "name": "GulfHelper",
+    "tagline": "Smart Tools for Saudi & GCC",
+    "description": "Professional financial and business tools for Saudi Arabia and GCC countries"
+  },
+  "logo": {
+    "primary": {
+      "file": "/logo.svg",
+      "format": "SVG",
+      "usage": "Primary logo with icon and text, use on light backgrounds",
+      "minWidth": "200px",
+      "aspectRatio": "4.17:1"
+    },
+    "icon": {
+      "file": "/logo-icon.svg",
+      "format": "SVG",
+      "usage": "Icon-only version for favicons, app icons, and compact spaces",
+      "size": "48x48px minimum"
+    },
+    "favicon": {
+      "file": "/favicon.svg",
+      "format": "SVG",
+      "usage": "Browser favicon, 32x32px",
+      "sizes": ["16x16", "32x32", "48x48"]
+    },
+    "variations": {
+      "light": {
+        "description": "For use on dark backgrounds",
+        "textColor": "#FFFFFF",
+        "iconGradient": "Blue to Gold"
+      },
+      "dark": {
+        "description": "For use on light backgrounds",
+        "textColor": "#1C1C1E",
+        "iconGradient": "Blue to Gold"
+      }
+    },
+    "clearSpace": {
+      "minimum": "Equal to the height of the 'G' icon",
+      "description": "Maintain clear space around logo equal to icon height"
+    },
+    "minimumSize": {
+      "primary": "120px width",
+      "icon": "24px"
+    }
+  },
+  "colors": {
+    "primary": {
+      "name": "Gulf Blue",
+      "hex": "#0057B8",
+      "rgb": "rgb(0, 87, 184)",
+      "usage": "Primary brand color, buttons, links, accents",
+      "contrast": "Use with white text (WCAG AAA compliant)"
+    },
+    "accent": {
+      "name": "Gulf Gold",
+      "hex": "#C9A94A",
+      "rgb": "rgb(201, 169, 74)",
+      "usage": "Accent color, highlights, borders, secondary actions",
+      "contrast": "Use with dark text (WCAG AA compliant)"
+    },
+    "secondary": {
+      "name": "Soft Gray",
+      "hex": "#F4F5F7",
+      "rgb": "rgb(244, 245, 247)",
+      "usage": "Backgrounds, cards, subtle dividers",
+      "contrast": "Use with dark text"
+    },
+    "text": {
+      "primary": {
+        "name": "Dark Text",
+        "hex": "#1C1C1E",
+        "rgb": "rgb(28, 28, 30)",
+        "usage": "Primary text color, headings, body text"
+      },
+      "secondary": {
+        "name": "Muted Text",
+        "hex": "#6B7280",
+        "rgb": "rgb(107, 114, 128)",
+        "usage": "Secondary text, descriptions, captions"
+      }
+    },
+    "background": {
+      "name": "White",
+      "hex": "#FFFFFF",
+      "rgb": "rgb(255, 255, 255)",
+      "usage": "Primary background color"
+    },
+    "gradients": {
+      "primary": {
+        "description": "Blue to Gold gradient",
+        "stops": [
+          {"offset": "0%", "color": "#0057B8"},
+          {"offset": "100%", "color": "#C9A94A"}
+        ],
+        "usage": "Logo, hero sections, premium features"
+      }
+    }
+  },
+  "typography": {
+    "headings": {
+      "fontFamily": "Inter, system-ui, -apple-system, sans-serif",
+      "fontWeight": "700 (Bold)",
+      "usage": "All headings (H1-H6), important labels",
+      "sizes": {
+        "h1": "3rem (48px) / 3.5rem (56px) desktop",
+        "h2": "2.25rem (36px) / 2.5rem (40px) desktop",
+        "h3": "1.875rem (30px)",
+        "h4": "1.5rem (24px)",
+        "h5": "1.25rem (20px)",
+        "h6": "1.125rem (18px)"
+      },
+      "lineHeight": "1.2",
+      "letterSpacing": "-0.02em"
+    },
+    "body": {
+      "fontFamily": "DM Sans, system-ui, -apple-system, sans-serif",
+      "fontWeight": "400 (Regular)",
+      "usage": "Body text, paragraphs, descriptions",
+      "sizes": {
+        "base": "1rem (16px)",
+        "large": "1.125rem (18px)",
+        "small": "0.875rem (14px)",
+        "xsmall": "0.75rem (12px)"
+      },
+      "lineHeight": "1.75",
+      "letterSpacing": "0"
+    },
+    "arabic": {
+      "fontFamily": "Cairo, Noto Sans Arabic, system-ui",
+      "usage": "Arabic text support",
+      "direction": "rtl",
+      "note": "Fonts should support Arabic characters for bilingual content"
+    }
+  },
+  "buttons": {
+    "primary": {
+      "background": "#0057B8",
+      "textColor": "#FFFFFF",
+      "borderRadius": "0.75rem (12px)",
+      "padding": "0.6875rem 1.5rem (11px 24px)",
+      "fontSize": "0.875rem (14px)",
+      "fontWeight": "500 (Medium)",
+      "hover": {
+        "background": "#004A9A",
+        "transform": "translateY(-1px)",
+        "boxShadow": "0 4px 12px rgba(0, 87, 184, 0.3)"
+      },
+      "active": {
+        "background": "#003D7C"
+      }
+    },
+    "secondary": {
+      "background": "transparent",
+      "textColor": "#1C1C1E",
+      "border": "1px solid #C9A94A",
+      "borderRadius": "0.75rem (12px)",
+      "padding": "0.6875rem 1.5rem (11px 24px)",
+      "fontSize": "0.875rem (14px)",
+      "fontWeight": "500 (Medium)",
+      "hover": {
+        "background": "#C9A94A",
+        "textColor": "#1C1C1E",
+        "borderColor": "#C9A94A"
+      }
+    },
+    "ghost": {
+      "background": "transparent",
+      "textColor": "#1C1C1E",
+      "border": "none",
+      "hover": {
+        "background": "#F4F5F7"
+      }
+    }
+  },
+  "cards": {
+    "background": "#FFFFFF",
+    "borderRadius": "1rem (16px)",
+    "border": "1px solid #E5E7EB",
+    "padding": "1.5rem (24px)",
+    "boxShadow": "0 1px 3px rgba(0, 0, 0, 0.1)",
+    "hover": {
+      "boxShadow": "0 4px 12px rgba(0, 0, 0, 0.15)",
+      "transform": "translateY(-2px)",
+      "borderColor": "#C9A94A"
+    },
+    "transition": "all 0.3s ease"
+  },
+  "icons": {
+    "style": "Minimal line icons",
+    "library": "Lucide React",
+    "strokeWidth": "2",
+    "size": {
+      "small": "16px",
+      "medium": "20px",
+      "large": "24px",
+      "xlarge": "32px"
+    },
+    "color": {
+      "default": "#1C1C1E",
+      "primary": "#0057B8",
+      "accent": "#C9A94A",
+      "muted": "#6B7280"
+    }
+  },
+  "spacing": {
+    "scale": [4, 8, 12, 16, 24, 32, 48, 64, 96, 128],
+    "unit": "px",
+    "description": "4px base unit, use multiples of 4 for consistent spacing"
+  },
+  "shadows": {
+    "sm": "0 1px 2px rgba(0, 0, 0, 0.05)",
+    "md": "0 4px 6px rgba(0, 0, 0, 0.1)",
+    "lg": "0 10px 15px rgba(0, 0, 0, 0.1)",
+    "xl": "0 20px 25px rgba(0, 0, 0, 0.1)"
+  },
+  "usage": {
+    "do": [
+      "Use primary blue for main actions and brand elements",
+      "Maintain clear space around logo",
+      "Use gold accent sparingly for highlights",
+      "Follow typography hierarchy",
+      "Ensure sufficient contrast for accessibility",
+      "Use rounded corners consistently (xl for cards, lg for buttons)"
+    ],
+    "dont": [
+      "Don't stretch or distort the logo",
+      "Don't use colors outside the palette",
+      "Don't use gold as primary background",
+      "Don't use fonts other than Inter/DM Sans",
+      "Don't reduce logo below minimum size",
+      "Don't place logo on busy backgrounds without clear space"
+    ]
+  },
+  "inspiration": {
+    "style": "Clean Gulf/KSA governmental dashboard",
+    "characteristics": [
+      "Professional and trustworthy",
+      "Approachable and user-friendly",
+      "Modern and clean",
+      "Culturally appropriate for GCC market",
+      "Accessible and inclusive"
+    ],
+    "references": [
+      "Saudi government portals",
+      "GCC financial institutions",
+      "Modern fintech applications",
+      "Professional business tools"
+    ]
+  }
+}
+
