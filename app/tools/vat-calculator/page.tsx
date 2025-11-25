@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from "react"
 import { Percent } from "lucide-react"
 import { ToolFormCard } from "@/components/ToolFormCard"
 import { ToolResultCard } from "@/components/ToolResultCard"
@@ -8,6 +11,41 @@ import { Button } from "@/components/ui/button"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
 export default function VATCalculatorPage() {
+  const [amount, setAmount] = useState(1000)
+  const [vatRate, setVatRate] = useState("15")
+  const [calculationType, setCalculationType] = useState("add")
+  const [quantity, setQuantity] = useState(1)
+
+  const calculateVAT = () => {
+    const baseAmount = amount * quantity
+    let vatAmount = 0
+    let totalAmount = 0
+    let originalAmount = 0
+
+    const rate = Number(vatRate) / 100
+
+    if (calculationType === "add") {
+      // Add VAT to amount
+      originalAmount = baseAmount
+      vatAmount = baseAmount * rate
+      totalAmount = baseAmount + vatAmount
+    } else {
+      // Remove VAT from amount (amount includes VAT)
+      totalAmount = baseAmount
+      originalAmount = baseAmount / (1 + rate)
+      vatAmount = totalAmount - originalAmount
+    }
+
+    return {
+      originalAmount,
+      vatAmount,
+      totalAmount,
+      rate: Number(vatRate),
+    }
+  }
+
+  const results = calculateVAT()
+
   return (
     <div className="container mx-auto px-4 py-8 max-w-7xl">
       {/* Page Header */}
@@ -32,12 +70,29 @@ export default function VATCalculatorPage() {
         >
           <div className="space-y-4">
             <div>
-              <Label htmlFor="amount">Amount (SAR)</Label>
-              <Input id="amount" type="number" placeholder="0.00" />
+              <Label htmlFor="amount">Amount (SAR) / المبلغ (ريال)</Label>
+              <Input 
+                id="amount" 
+                type="number" 
+                value={amount}
+                onChange={(e) => setAmount(Number(e.target.value) || 0)}
+                placeholder="1000"
+              />
             </div>
             <div>
-              <Label htmlFor="vat-rate">VAT Rate</Label>
-              <Select>
+              <Label htmlFor="quantity">Quantity / الكمية</Label>
+              <Input 
+                id="quantity" 
+                type="number" 
+                value={quantity}
+                onChange={(e) => setQuantity(Number(e.target.value) || 1)}
+                placeholder="1"
+                min="1"
+              />
+            </div>
+            <div>
+              <Label htmlFor="vat-rate">VAT Rate / معدل ضريبة القيمة المضافة</Label>
+              <Select value={vatRate} onValueChange={setVatRate}>
                 <SelectTrigger id="vat-rate">
                   <SelectValue placeholder="Select VAT rate" />
                 </SelectTrigger>
@@ -49,18 +104,18 @@ export default function VATCalculatorPage() {
               </Select>
             </div>
             <div>
-              <Label htmlFor="calculation-type">Calculation Type</Label>
-              <Select>
+              <Label htmlFor="calculation-type">Calculation Type / نوع الحساب</Label>
+              <Select value={calculationType} onValueChange={setCalculationType}>
                 <SelectTrigger id="calculation-type">
                   <SelectValue placeholder="Select calculation type" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="add">Add VAT to amount</SelectItem>
-                  <SelectItem value="remove">Remove VAT from amount</SelectItem>
+                  <SelectItem value="add">Add VAT to amount / إضافة ضريبة القيمة المضافة</SelectItem>
+                  <SelectItem value="remove">Remove VAT from amount / إزالة ضريبة القيمة المضافة</SelectItem>
                 </SelectContent>
               </Select>
             </div>
-            <Button className="w-full" size="lg">Calculate VAT</Button>
+            <Button className="w-full" size="lg">Calculate VAT / احسب ضريبة القيمة المضافة</Button>
           </div>
         </ToolFormCard>
 
@@ -72,22 +127,49 @@ export default function VATCalculatorPage() {
           <div className="space-y-6">
             <div className="p-6 bg-background rounded-xl border border-border">
               <div className="flex justify-between items-center mb-2">
-                <span className="text-muted-foreground">Original Amount</span>
-                <span className="text-2xl font-bold text-foreground">0.00 SAR</span>
+                <span className="text-muted-foreground">
+                  {calculationType === "add" ? "Original Amount / المبلغ الأصلي" : "Amount Excluding VAT / المبلغ بدون ضريبة"}
+                </span>
+                <span className="text-2xl font-bold text-foreground">
+                  {results.originalAmount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} SAR
+                </span>
               </div>
             </div>
             <div className="p-6 bg-background rounded-xl border border-border">
               <div className="flex justify-between items-center mb-2">
-                <span className="text-muted-foreground">VAT Amount (15%)</span>
-                <span className="text-2xl font-bold text-foreground">0.00 SAR</span>
+                <span className="text-muted-foreground">VAT Amount ({results.rate}%) / مبلغ الضريبة</span>
+                <span className="text-2xl font-bold text-foreground">
+                  {results.vatAmount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} SAR
+                </span>
               </div>
             </div>
             <div className="p-6 bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl border-2 border-primary/20">
               <div className="flex justify-between items-center mb-2">
-                <span className="text-muted-foreground font-medium">Total Amount</span>
-                <span className="text-3xl font-bold text-primary">0.00 SAR</span>
+                <span className="text-muted-foreground font-medium">
+                  {calculationType === "add" ? "Total Amount / المبلغ الإجمالي" : "Amount Including VAT / المبلغ مع الضريبة"}
+                </span>
+                <span className="text-3xl font-bold text-primary">
+                  {results.totalAmount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} SAR
+                </span>
               </div>
             </div>
+            {quantity > 1 && (
+              <div className="p-4 bg-muted rounded-xl">
+                <div className="text-sm text-muted-foreground mb-2">Per Unit / لكل وحدة</div>
+                <div className="flex justify-between items-center">
+                  <span className="text-muted-foreground">Unit Price / سعر الوحدة</span>
+                  <span className="font-semibold">
+                    {(results.originalAmount / quantity).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} SAR
+                  </span>
+                </div>
+                <div className="flex justify-between items-center mt-1">
+                  <span className="text-muted-foreground">VAT per Unit / الضريبة لكل وحدة</span>
+                  <span className="font-semibold">
+                    {(results.vatAmount / quantity).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} SAR
+                  </span>
+                </div>
+              </div>
+            )}
           </div>
         </ToolResultCard>
       </div>
@@ -107,4 +189,3 @@ export default function VATCalculatorPage() {
     </div>
   )
 }
-
